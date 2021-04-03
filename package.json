@@ -1,0 +1,26 @@
+{
+    "name": "authentification",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "server": "nodemon server.js",
+        "start": "concurrently \"npm run server\" \"cd client && npm start\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^8.2.0",
+        "ee-first": "file:node_modules\\ee-first",
+        "express": "^4.17.1",
+        "express-validator": "^6.9.2",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.11.10",
+        "nodemon": "^2.0.7"
+    },
+    "devDependencies": {
+        "concurrently": "^6.0.0"
+    }
+}
